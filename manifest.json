@@ -4,7 +4,6 @@
   "description": "Skip big G's cookie consent page",
   "author": "Douile <25043847+Douile@users.noreply.github.com>",
   "homepage_url": "https://github.com/Douile/g-consent-skip",
-  "default_locale": "en",
   "version": "0.1",
   "background": {
     "scripts": ["background.js"]
