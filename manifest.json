@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "g-consent-skip",
+  "description": "Skip big G's cookie consent page",
+  "author": "Douile <25043847+Douile@users.noreply.github.com>",
+  "homepage_url": "https://github.com/Douile/g-consent-skip",
+  "default_locale": "en",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["click-buttons.js"],
+      "run_at": "document_end",
+      "matches": ["*://consent.google.com/*"]
+    }
+  ],
+  "permissions": ["webRequest", "webRequestBlocking", "*://googleads.g.doubleclick.net/ads/preferences/cu/optout*" ]
+}
